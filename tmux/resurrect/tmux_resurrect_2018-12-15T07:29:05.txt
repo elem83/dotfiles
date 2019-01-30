@@ -1,0 +1,14 @@
+pane	gulp	0	:zsh	1	:*	0	:/home/netsamir/WebApp/pbelevation-0.1	0	vim	:vim .
+pane	gulp	0	:zsh	1	:*	1	:/home/netsamir/WebApp/pbelevation-0.1	1	zsh	:
+pane	gulp	1	:npm	0	:-	0	:/home/netsamir/WebApp/PBElevation/sources	0	node	:node /home/netsamir/local/node-v9.5.0-linux-x64/bin/harp server
+pane	gulp	1	:npm	0	:-	1	:/home/netsamir/Downloads/pbrun	0	vim	:vim elevation.py
+pane	gulp	1	:npm	0	:-	2	:/home/netsamir/Downloads/pbrun	0	python3.6	:/usr/bin/python3.6 /usr/local/bin/ipython --TerminalInteractiveShell.editing_mode=vi
+pane	gulp	1	:npm	0	:-	3	:/home/netsamir/WebApp/pbelevation-0.1	1	npm	:npm
+pane	ninja	0	:exit	0	:-	0	:/home/netsamir/Python/Click	1	vim	:vim autocomplete.py
+pane	ninja	1	:..tes/inventory	1	:*	0	:/home/netsamir/Documents/E83/Customers/LA International	0	zsh	:
+pane	ninja	1	:..tes/inventory	1	:*	1	:/home/netsamir/Documents/E83/Invoices	1	zsh	:sudo -s
+window	gulp	0	1	:*	2199,319x76,0,0{159x76,0,0,194,159x76,160,0,209}
+window	gulp	1	0	:-	c612,319x76,0,0[319x2,0,0,199,319x73,0,3{114x73,0,3,202,204x73,115,3[204x6,115,3,205,204x66,115,10,208]}]
+window	ninja	0	0	:-	b3a8,319x76,0,0,120
+window	ninja	1	1	:*	1f93,319x76,0,0{139x76,0,0,190,179x76,140,0,207}
+state	gulp	ninja

@@ -1,0 +1,19 @@
+unmailboxes *
+source "~/.mutt/com.webfaction/secrets"
+set imap_user = "ssadek"
+set smtp_url = "smtp://$imap_user:$smtp_pass@smtp.webfaction.com:587/"
+
+set from = "samir.sadek@mercyl.com"
+set realname = "Samir Sadek"
+
+set hostname = "webfaction.com"
+set folder = "imaps://mail.webfaction.com:993"
+set spoolfile = "+INBOX"
+set record = "+Sent"
+set trash = "+Trash"
+
+mailboxes +INBOX +Drafts +Archives +Sent +Trash
+
+set header_cache = "~/.mutt/com.webfaction/cache/headers"
+set message_cachedir = "~/.mutt/com.webfaction/cache/bodies"
+set certificate_file = "~/.mutt/com.webfaction/certificates"

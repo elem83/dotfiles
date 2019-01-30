@@ -1,0 +1,7 @@
+pane	ninja	0	:exit	1	:*	0	:/home/netsamir/dotfiles	0	zsh	:
+pane	ninja	0	:exit	1	:*	1	:/home/netsamir/Downloads	0	zsh	:
+pane	ninja	0	:exit	1	:*	2	:/home/netsamir/dotfiles/oh-my-zsh	1	zsh	:
+pane	ninja	1	:zsh	0	:-	0	:/home/netsamir/dotfiles/oh-my-zsh	1	zsh	:
+window	ninja	0	1	:*	9860,319x74,0,0{132x74,0,0,75,186x74,133,0[186x38,133,0,82,186x35,133,39,84]}
+window	ninja	1	0	:-	62f4,319x74,0,0,34
+state	ninja	

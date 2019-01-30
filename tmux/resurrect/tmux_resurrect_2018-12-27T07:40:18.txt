@@ -1,0 +1,7 @@
+pane	npm	0	:zsh	1	:*	0	:/home/netsamir/TypeScript/packt_understand_typescript	0	vim	:vim app.ts
+pane	npm	0	:zsh	1	:*	1	:/home/netsamir/TypeScript/packt_understand_typescript	0	node	:node /home/netsamir/local/node-v9.5.0-linux-x64/bin/ts-node
+pane	npm	0	:zsh	1	:*	2	:/home/netsamir/TypeScript/packt_understand_typescript	1	zsh	:
+pane	npm	1	:npm	0	:-	0	:/home/netsamir/TypeScript/packt_understand_typescript	1	npm	:npm
+window	npm	0	1	:*	7b32,319x74,0,0{174x74,0,0,0,144x74,175,0[144x57,175,0,1,144x16,175,58,4]}
+window	npm	1	0	:-	c57f,319x74,0,0,2
+state	npm	

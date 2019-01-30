@@ -1,0 +1,39 @@
+# ~/.mutt/scripts/mailcap
+#
+# this uses the view_attachment script found in ~/.mutt/scripts/view_attachment.sh
+#
+# this is meant for an OS X system
+
+# MS Excel
+# this will use the default xls spreadsheet handler from open
+application/x-msexcel; ~/.mutt/scripts/view_attachment.sh %s doc
+application/ms-exc; ~/.mutt/scripts/view_attachment.sh %s doc
+application/excel; ~/.mutt/scripts/view_attachment.sh %s doc
+application/msexcel; ~/.mutt/scripts/view_attachment.sh %s doc
+application/vnd.ms-exc; ~/.mutt/scripts/view_attachment.sh %s doc
+application/vnd.ms-excel; ~/.mutt/scripts/view_attachment.sh %s doc
+
+# MS Word
+# use textedit to open .doc files as it's more light-weight
+application/msword; ~/.mutt/scripts/view_attachment.sh %s doc
+
+# docx
+application/vnd.openxmlformats-officedocument.wordprocessingml.document; ~/.mutt/scripts/view_attachment.sh %s doc
+# xlsx
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet; ~/.mutt/scripts/view_attachment.sh %s doc
+
+# Images
+image/jpeg; ~/.mutt/scripts/view_attachment.sh %s img
+image/pjpeg; ~/.mutt/scripts/view_attachment.sh %s img
+image/png; ~/.mutt/scripts/view_attachment.sh %s img
+image/gif; ~/.mutt/scripts/view_attachment.sh %s img
+
+# PDF
+application/pdf; ~/.mutt/scripts/view_attachment.sh %s pdf
+
+# HTML
+text/html; xdg-open %s; test=test -n "$DISPLAY"; needsterminal;
+text/html; w3m -I %{charset} -T text/html; copiousoutput;
+
+# Unidentified.
+application/octet-stream; ~/.mutt/scripts/view_attachment.sh %s "-"

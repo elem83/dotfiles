@@ -1,0 +1,22 @@
+unmailboxes *
+source "~/.mutt/com.fastmail/secrets"
+set imap_user = 'netsamir@fastmail.jp'
+
+set smtp_pass = 'uke75muv7lg7fhjg'
+set smtp_url = "smtp://$imap_user:$smtp_pass@smtp.fastmail.com:587/"
+
+set from = 'smr@xsmail.com'
+set realname = 'Samir Sadek'
+set hostname = "fastmail.com"
+
+set folder = "imaps://imap.fastmail.com:993"
+set spoolfile = +INBOX
+set postponed = +Drafts
+set record = "+Sent Items"
+set trash = "+Trash"
+
+mailboxes +INBOX +Drafts +Archives "+Sent Items" +Trash
+
+set header_cache = "~/.mutt/com.fastmail/cache/headers"
+set message_cachedir = "~/.mutt/com.fastmail/cache/bodies"
+set certificate_file = "~/.mutt/com.fastmail/certificates"

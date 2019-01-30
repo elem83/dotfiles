@@ -1,0 +1,103 @@
+source ~/.mutt/config/muttcol
+source ~/.mutt/config/aliases.rc
+set alias_file = ~/.mutt/config/aliases.rc
+
+# General Settings
+set sort = threads # 'reverse-date'
+set sort_aux = reverse-last-date-received
+set edit_headers = yes
+set editor = 'vim +/^$ +nohlsearch' # Move past headers.
+#set pager = view
+set mail_check = 300
+set timeout = 10
+set move = no
+set imap_keepalive = 900
+set mail_check = "10"
+set mailcap_path = ~/.mutt/config/mailcap
+set date_format="%m/%d %I:%M"
+set index_format="%2C %Z %d %-15.15F %s (%-4.4c)"
+set pager_stop = yes # Don't move to the next message when paging past the bottom of a message.
+set resolve = no # Don't auto-advance to the next message after every single op.
+set imap_list_subscribed = no
+set imap_check_subscribed = no
+# activate TLS
+set ssl_starttls = yes
+# always use SSL
+set ssl_force_tls = yes
+
+auto_view text/html
+alternative_order text/plain text/enriched text/html
+
+# Todo
+# history
+# format=flowed
+
+# Color
+# mono bold bold
+# mono underline underline
+# mono indicator reverse
+color index yellow default '.*'
+color index_author white default '.*'
+color index_number blue default
+color index_subject cyan default '.s'
+color index_size green default
+color normal default default
+color body brightred default [\-\.+_a-zA-Z0-9]+@[\-\.a-zA-Z0-9]+
+color body brightblue default (https?|ftp)://[\-\.,/%~_:?&=\#a-zA-Z0-9]+
+
+# Bind
+bind editor <space> noop
+bind index G last-entry
+bind index gg first-entry
+bind index d half-down
+bind index u half-up
+bind index D delete-message
+bind index U undelete-message
+bind index F search
+bind index R group-reply
+
+# Sidebar
+set sidebar_visible # Sidebar visible by default
+set mail_check_stats
+set sidebar_format = '%B%?F? [%F]?%* %?N?%N/?%S'
+set sidebar_delim_chars = "/"
+set sidebar_folder_indent
+set sidebar_indent_string = '  '
+set sidebar_short_path
+
+bind index,pager B sidebar-toggle-visible # Use 'B' to switch the Sidebar on and off
+bind index,pager \CP sidebar-prev
+# Ctrl-Shift-P - Previous Mailbox
+bind index,pager \CN sidebar-next
+# Ctrl-Shift-N - Next Mailbox
+bind index,pager \CO sidebar-open
+# Ctrl-Shift-O - Open Highlighted Mailbox
+
+#color sidebar_new yellow default # color of folders with new mail
+color sidebar_indicator default color17
+# Dark blue background
+color sidebar_highlight white   color238
+# Grey background
+color sidebar_spoolfile yellow  default
+# Yellow
+color sidebar_new       green   default
+# Green
+color sidebar_ordinary  default default
+# Default colors
+color sidebar_flagged   red     default
+# Red
+color sidebar_divider   color8  default
+# Dark grey
+
+folder-hook 'gmail.com' 'source ~/.mutt/account.gmail.rc'
+folder-hook 'webfaction.com' 'source ~/.mutt/account.webfaction.rc'
+folder-hook 'fastmail.com' 'source ~/.mutt/account.fastmail.rc'
+
+macro index <f1> '<sync-mailbox><refresh><enter-command>source ~/.mutt/account.gmail.rc<enter><change-folder>!<enter>'
+macro index <f2> '<sync-mailbox><refresh><enter-command>source ~/.mutt/account.fastmail.rc<enter><change-folder>!<enter>'
+macro index <f3> '<sync-mailbox><refresh><enter-command>source ~/.mutt/account.webfaction.rc<enter><change-folder>!<enter>'
+
+macro index 'c' '<change-folder>?<change-dir><home>^K=<enter>'
+macro pager,index A <save-message>=Archives<enter> "Saved message in Archives"
+
+source '~/.mutt/account.gmail.rc' # switch to default account on startup

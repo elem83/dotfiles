@@ -1,0 +1,19 @@
+pane	boot	0	:~/Harp	0	:-	0	:/home/netsamir/Harp	1	zsh	:
+pane	boot	1	:..4_boilerplate	1	:*	0	:/home/netsamir/Harp/b4_boilerplate	0	zsh	:
+pane	boot	1	:..4_boilerplate	1	:*	1	:/home/netsamir/Harp/b4_boilerplate	1	zsh	:
+pane	bootstrap	0	:.._Lambert/beta	0	:-	0	:/home/netsamir/Bootstrap/LearningBootstrap4_Matt_Lambert/beta	1	zsh	:
+pane	bootstrap	1	:.._Lambert/beta	1	:*	0	:/home/netsamir/Bootstrap/LearningBootstrap4_Matt_Lambert/beta	0	zsh	:
+pane	bootstrap	1	:.._Lambert/beta	1	:*	1	:/home/netsamir/Bootstrap/LearningBootstrap4_Matt_Lambert/beta	1	zsh	:
+pane	cf	0	:vim	1	:*	0	:/home/netsamir	1	vim	:vim initializr
+pane	mercyl	0	:..s/mercyl_2017	1	:*	0	:/home/netsamir/Webfactional/webapps/mercyl_2017	1	zsh	:
+pane	mercyl	1	:..s/mercyl_2017	0	:-	0	:/home/netsamir/Webfactional/webapps/mercyl_2017	0	zsh	:
+pane	mercyl	1	:..s/mercyl_2017	0	:-	1	:/home/netsamir/Webfactional/webapps/mercyl_2017	0	zsh	:
+pane	mercyl	1	:..s/mercyl_2017	0	:-	2	:/home/netsamir/Webfactional/webapps/mercyl_2017	1	zsh	:
+window	boot	0	0	:-	ae7e,180x50,0,0,1
+window	boot	1	1	:*	7511,180x50,0,0[180x16,0,0,2,180x33,0,17,3]
+window	bootstrap	0	0	:-	ae81,180x50,0,0,4
+window	bootstrap	1	1	:*	f518,180x50,0,0[180x16,0,0,5,180x33,0,17,6]
+window	cf	0	1	:*	ae7d,180x50,0,0,0
+window	mercyl	0	1	:*	ae84,180x50,0,0,7
+window	mercyl	1	0	:-	50af,180x50,0,0[180x14,0,0,8,180x17,0,15,9,180x17,0,33,10]
+state	mercyl	boot
